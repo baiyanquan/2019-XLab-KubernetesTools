@@ -12,31 +12,31 @@ sys.path.append('../')
 target_url = "http://192.168.199.236:8080/reasoner/message"
 
 Hosts = [
-    "192.168.199.41",
-    "192.168.199.42",
-    "192.168.199.43",
-    "192.168.199.44",
-    "192.168.199.45"
+    "192.168.199.21",
+    "192.168.199.22",
+    "192.168.199.23",
+    "192.168.199.24",
+    "192.168.199.25"
 ]
 
 Spare_hosts = {
-    "192.168.199.41": "192.168.199.31",
-    "192.168.199.42": "192.168.199.32",
-    "192.168.199.43": "192.168.199.33",
-    "192.168.199.44": "192.168.199.34",
-    "192.168.199.45": "192.168.199.35"
+    "192.168.199.21": "192.168.199.21",
+    "192.168.199.22": "192.168.199.22",
+    "192.168.199.23": "192.168.199.23",
+    "192.168.199.24": "192.168.199.24",
+    "192.168.199.25": "192.168.199.25"
 }
 
 Default_cmd = {
     "cpu": "./blade create cpu fullload",
-    "network": "./blade create network delay --interface enp2s0 --time 1000 --timeout 600",
+    "network": "./blade create network delay --interface ens160 --time 1000 --timeout 600",
     "disk": "./blade create disk burn --read",
     "mem": "./blade create mem load --mem-percent 80"
 }
 
 Cmd = {
     "cpu": "./blade create cpu fullload",
-    "network": "./blade create network delay --interface enp2s0 ",
+    "network": "./blade create network delay --interface ens160 ",
     "disk": "./blade create disk burn --",
     "mem": "./blade create mem load --mem-percent "
 }
