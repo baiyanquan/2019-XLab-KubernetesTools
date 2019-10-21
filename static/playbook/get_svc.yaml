@@ -1,5 +1,5 @@
 ---
-- hosts: Lab409-vm-master
+- hosts: Lab409-master
   remote_user: root
   tasks:
   - name: Get existing Services
